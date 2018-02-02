@@ -31,6 +31,25 @@ app.post("/addcontato", (req, res) => {
   })
 })
 
+app.get("/listproducts", (req, res) => {
+  knex("product").select().then(ret => {
+    res.send(ret)
+  }).catch(err => {
+    res.status(500).send(err)
+    console.log(err)
+  })
+})
+
+app.post("/addproduct", (req, res) => {
+  const product = req.body
+  knex("product").insert(product, "idproduct").then(ret => {
+      res.send(ret)
+  }).catch(err => {
+    res.status(500).send(err)
+    console.log(err)
+  })
+})
+
 knex.migrate.latest().then(_ =>
   app.listen(3000, _ =>
     console.log("server online!")))
