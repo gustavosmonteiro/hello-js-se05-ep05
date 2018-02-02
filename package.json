@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/gustavosmonteiro/hello-js-se05-ep05#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "knex": "^0.14.2",
+    "morgan": "^1.9.0",
     "sqlite3": "^3.1.13"
   }
 }
