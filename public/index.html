@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Comentário -->
     <title>Hello World!</title>
+    <!-- o estilo vem de um arquivo externo agora -->
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
     <h1>Hello</h1>
-    <p style="color:blue">world!</p>
-    <form method="POST" action="addcontato">
+    <p>world!</p>
+    <form class="bordado" method="POST" action="addcontato">
       <label>
         Nome
-        <input name="nomecontato" required/>
+        <input id="nome" name="nomecontato" required/>
       </label>
       <br/>
       <label>

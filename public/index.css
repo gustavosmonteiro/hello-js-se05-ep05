@@ -1,0 +1,15 @@
+/* index.css */
+h1 {
+    font-size:96px;
+  }
+  
+  .bordado {
+    border: 3px solid red;
+    min-height: 100px;
+    max-width: 300px;
+  }
+  
+  #nome {
+    border: 5px double blue;
+  
+  }
